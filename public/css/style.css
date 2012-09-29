@@ -1,0 +1,18 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+a {
+  color: #00B7FF;
+}
+
+.hero-portrait { display:block; width:168px; height:130px; background:url(../img/profile/career-portraits.jpg) no-repeat }
+.hero-portrait.barbarian-male { background-position:0 0 }.hero-portrait.barbarian-female { background-position:-168px 0 }
+.hero-portrait.demon-hunter-male { background-position:0 -130px }
+.hero-portrait.demon-hunter-female { background-position:-168px -130px }
+.hero-portrait.monk-male { background-position:0 -260px }
+.hero-portrait.monk-female { background-position:-168px -260px }
+.hero-portrait.witch-doctor-male { background-position:0 -390px }
+.hero-portrait.witch-doctor-female { background-position:-168px -390px }
+.hero-portrait.wizard-male { background-position:0 -520px }
+.hero-portrait.wizard-female { background-position:-168px -520px }

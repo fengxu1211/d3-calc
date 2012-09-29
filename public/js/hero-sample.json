@@ -1,0 +1,1079 @@
+{
+    "id": 14389654,
+    "name": "MagicBarb",
+    "class": "barbarian",
+    "gender": 1,
+    "level": 60,
+    "paragonLevel": 20,
+    "hardcore": false,
+    "skills": {
+        "active": [
+            {
+                "skill": {
+                    "slug": "frenzy",
+                    "name": "Frenzy",
+                    "icon": "barbarian_frenzy",
+                    "level": 11,
+                    "categorySlug": "primary",
+                    "tooltipUrl": "skill/barbarian/frenzy",
+                    "description": "Generate: 3 Fury per attack\r\n\r\nSwing for 110% weapon damage. Frenzy attack speed increases by 15% with each swing. This effect can stack up to 5 times for a total bonus of 75% attack speed.",
+                    "simpleDescription": "Generate: 3 Fury per attack\r\n\r\nEnter a frenzied state that increases your attack speed with each hit.",
+                    "skillCalcId": "W"
+                },
+                "rune": {
+                    "slug": "frenzy-a",
+                    "type": "a",
+                    "name": "Maniac",
+                    "level": 59,
+                    "description": "Each Frenzy effect also increases your damage by 4%.",
+                    "simpleDescription": "Increase damage dealt while frenzied.",
+                    "tooltipParams": "rune/frenzy/a",
+                    "skillCalcId": "c",
+                    "order": 4
+                }
+            },
+            {
+                "skill": {
+                    "slug": "seismic-slam",
+                    "name": "Seismic Slam",
+                    "icon": "barbarian_seismicslam",
+                    "level": 12,
+                    "categorySlug": "secondary",
+                    "tooltipUrl": "skill/barbarian/seismic-slam",
+                    "description": "Cost: 30 Fury\r\n\r\nSlam the ground and cause a wave of destruction that deals 240% weapon damage and Knockback to targets in a 45 yard arc.",
+                    "simpleDescription": "Cost: 30 Fury\r\n\r\nCreate shockwaves that damage enemies in their path.",
+                    "skillCalcId": "e"
+                },
+                "rune": {
+                    "slug": "seismic-slam-b",
+                    "type": "b",
+                    "name": "Rumble",
+                    "level": 35,
+                    "description": "The ground continues to shudder after the initial strike, damaging enemies in the area for 60% weapon damage as Physical over 2 seconds.",
+                    "simpleDescription": "Extend the duration of Seismic Slam and its effects.",
+                    "tooltipParams": "rune/seismic-slam/b",
+                    "skillCalcId": "b",
+                    "order": 2
+                }
+            },
+            {
+                "skill": {
+                    "slug": "battle-rage",
+                    "name": "Battle Rage",
+                    "icon": "barbarian_battlerage",
+                    "level": 22,
+                    "categorySlug": "tactics",
+                    "tooltipUrl": "skill/barbarian/battle-rage",
+                    "description": "Cost: 20 Fury\r\n\r\nEnter a rage which increases damage by 15% and Critical Hit Chance by 3% for 30 seconds.",
+                    "simpleDescription": "Cost: 20 Fury\r\n\r\nUnleash your inner rage, increasing your damage and Critical Hit Chance for 30 seconds.",
+                    "skillCalcId": "R"
+                },
+                "rune": {
+                    "slug": "battle-rage-d",
+                    "type": "d",
+                    "name": "Into the Fray",
+                    "level": 46,
+                    "description": "While under the effects of Battle Rage, Critical Hits have a chance to generate 15 additional Fury.",
+                    "simpleDescription": "Critical Hits have a chance to generate Fury.",
+                    "tooltipParams": "rune/battle-rage/d",
+                    "skillCalcId": "Y",
+                    "order": 3
+                }
+            },
+            {
+                "skill": {
+                    "slug": "rend",
+                    "name": "Rend",
+                    "icon": "barbarian_rend",
+                    "level": 5,
+                    "categorySlug": "secondary",
+                    "tooltipUrl": "skill/barbarian/rend",
+                    "description": "Cost: 20 Fury\r\n\r\nA sweeping strike causes all nearby enemies to Bleed for 700% weapon damage as Physical over 5 seconds.",
+                    "simpleDescription": "Cost: 20 Fury\r\n\r\nWound nearby enemies and cause them to Bleed for 5 seconds.",
+                    "skillCalcId": "c"
+                },
+                "rune": {
+                    "slug": "rend-b",
+                    "type": "b",
+                    "name": "Ravage",
+                    "level": 11,
+                    "description": "Increase the range of Rend to hit all enemies within 17 yards.",
+                    "simpleDescription": "Increase the range of Rend.",
+                    "tooltipParams": "rune/rend/b",
+                    "skillCalcId": "a",
+                    "order": 0
+                }
+            },
+            {
+                "skill": {
+                    "slug": "war-cry",
+                    "name": "War Cry",
+                    "icon": "barbarian_warcry",
+                    "level": 28,
+                    "categorySlug": "tactics",
+                    "tooltipUrl": "skill/barbarian/war-cry",
+                    "description": "Generate: 30 Fury\r\nCooldown: 30 seconds\r\n\r\nUnleash a rallying cry to increase Armor for you and all allies within 50 yards by 20% for 60 seconds.",
+                    "simpleDescription": "Generate: 30 Fury\r\nCooldown: 30 seconds\r\n\r\nA rallying cry increases Armor for you and your allies for 60 seconds.",
+                    "skillCalcId": "k"
+                },
+                "rune": {
+                    "slug": "war-cry-c",
+                    "type": "c",
+                    "name": "Impunity",
+                    "level": 60,
+                    "description": "All of your resistances are increased by 50% while affected by War Cry.",
+                    "simpleDescription": "War Cry increases your ability to resist damage of all types.",
+                    "tooltipParams": "rune/war-cry/c",
+                    "skillCalcId": "c",
+                    "order": 4
+                }
+            },
+            {
+                "skill": {
+                    "slug": "wrath-of-the-berserker",
+                    "name": "Wrath of the Berserker",
+                    "icon": "barbarian_wrathoftheberserker",
+                    "level": 30,
+                    "categorySlug": "rage",
+                    "tooltipUrl": "skill/barbarian/wrath-of-the-berserker",
+                    "description": "Cost: 50 Fury \r\nCooldown: 120 seconds\r\n\r\nEnter a berserker rage which raises several attributes for 15 seconds.\r\n\r\nCritical Hit Chance: 10%\r\nAttack Speed: 25%\r\nDodge Chance: 20%\r\nMovement Speed: 20%",
+                    "simpleDescription": "Cost: 50 Fury \r\nCooldown: 120 seconds\r\n\r\nBecome Fury incarnate for 15 seconds.",
+                    "skillCalcId": "P"
+                },
+                "rune": {
+                    "slug": "wrath-of-the-berserker-a",
+                    "type": "a",
+                    "name": "Insanity",
+                    "level": 40,
+                    "description": "While active your damage is also increased by 100%.",
+                    "simpleDescription": "Increase your damage while Wrath of the Berserker is active.",
+                    "tooltipParams": "rune/wrath-of-the-berserker/a",
+                    "skillCalcId": "Z",
+                    "order": 1
+                }
+            }
+        ],
+        "passive": [
+            {
+                "skill": {
+                    "slug": "ruthless",
+                    "name": "Ruthless",
+                    "icon": "barbarian_passive_ruthless",
+                    "tooltipUrl": "skill/barbarian/ruthless",
+                    "description": "Critical Hit Chance increased by 5%. Critical Hit Damage increased by 50%.\r\n\r\nMany skills and runes rely on Critical Hits to trigger their effects.",
+                    "flavor": "The clans each paint their warriors in their own unique way. Some celebrate the mountain, others honor the fire, but the Targos clan worships the purifying virtue of pain.",
+                    "skillCalcId": "Z",
+                    "level": 10
+                }
+            },
+            {
+                "skill": {
+                    "slug": "weapons-master",
+                    "name": "Weapons Master",
+                    "icon": "barbarian_passive_weaponsmaster",
+                    "tooltipUrl": "skill/barbarian/weapons-master",
+                    "description": "Gain a bonus based on the weapon type of your main hand weapon:\r\nSwords/Daggers: 15% increased damage\r\nMaces/Axes: 10% Critical Hit Chance\r\nPolearms/Spears: 10% attack speed\r\nMighty Weapons: 3 Fury per hit",
+                    "flavor": "\"My men ambushed the traveler in the woods, but it was we who were surprised. Such keen senses, swift motions, flawless strikes. We never stood a chance.\" —Redjack the Bandit",
+                    "skillCalcId": "Y",
+                    "level": 16
+                }
+            },
+            {
+                "skill": {
+                    "slug": "superstition",
+                    "name": "Superstition",
+                    "icon": "barbarian_passive_superstition",
+                    "tooltipUrl": "skill/barbarian/superstition",
+                    "description": "Reduces all non-Physical damage by 20%. Whenever you take damage from a ranged or elemental attack, you have a chance to gain 3 Fury.",
+                    "flavor": "\"The sorcery of the west has brought us nothing but blight. Strength built these walls, and strength will hold them.\" —Gruchac Hammerhand",
+                    "skillCalcId": "e",
+                    "level": 30
+                }
+            }
+        ]
+    },
+    "items": {
+        "head": {
+            "id": "Unique_Helm_011_104",
+            "name": "The Helm of Command",
+            "icon": "unique_helm_011_104_demonhunter_male",
+            "displayColor": "orange",
+            "tooltipParams": "item/CmAInNep5wgSBwgEFaHQm5MdwxrJex3hNnAzHUcJYpwdH8pdSR2UvzSKHQ5c9PwwDTjoAkAAUBJg6AJqJQoMCAAQi67JooGAgKApEhUI5ta-sAwSBwgEFWP1i18wDTgAQAEYvb2hxg1QAlgC"
+        },
+        "torso": {
+            "id": "Unique_ChestArmor_028_104",
+            "name": "Blackthorne's Surcoat",
+            "icon": "unique_chestarmor_028_104_demonhunter_male",
+            "displayColor": "green",
+            "tooltipParams": "item/Cq4BCKTkj6oEEgcIBBX7ZiUdHeBElDUdIYc-Vh1bToDJHYSNuc0dIuzMuB2TAmPqMAk4qAJAAFASYKgCaiUKDAgAEJLnw4-BgIDgKRIVCPu81PEJEgcIBBVi9YtfMAk4AEABaiUKDAgAEJTnw4-BgIDgKRIVCPOfuMwPEgcIBBVi9YtfMAk4AEABaiUKDAgAENLmw4-BgIDgKRIVCOO_mYUNEgcIBBVi9YtfMA04AEABGPabq9IDUAJYAqABhsau8QGgAfabq9ID"
+        },
+        "feet": {
+            "id": "Boots_206",
+            "name": "The Hooves",
+            "icon": "boots_206_barbarian_male",
+            "displayColor": "yellow",
+            "tooltipParams": "item/CkMI8Zi51w8SBwgEFZ5Fm38d7cx2UB2V-O2WHQ4XgMkdCepQCB0i7My4IgsIABXBRAMAGB4gDjAJOMkEQABICVAOYMkEGLyW2vkPUAJYAg"
+        },
+        "hands": {
+            "id": "Gloves_206",
+            "name": "Fatal Mail",
+            "icon": "gloves_206_barbarian_male",
+            "displayColor": "yellow",
+            "tooltipParams": "item/CkcIxZOPcRIHCAQVx1uSpB1fzLYoHbcEabodccID4B2eVQ1bHTMymj0dD5AK_CILCAAVqv4BABgyIAgwCTjdBEAASAFQEGDdBBjxkO22C1ACWAI"
+        },
+        "shoulders": {
+            "id": "Shoulders_205",
+            "name": "Sealed Guard",
+            "icon": "shoulders_205_barbarian_male",
+            "displayColor": "yellow",
+            "tooltipParams": "item/CkMI6cKfwQESBwgEFc_4yBUdkCb-qx2cbLMUHbJX1e4d9mpQXx2V-O2WIgsIABWtRAMAGBYgADAJONEDQABIE1AOYNEDGJ7jx9wCUAJYAg"
+        },
+        "legs": {
+            "id": "Unique_Pants_013_104",
+            "name": "Blackthorne's Jousting Mail",
+            "icon": "unique_pants_013_104_demonhunter_male",
+            "displayColor": "green",
+            "tooltipParams": "item/CjkIwuXengsSBwgEFYPRFQ8dzLstgB0fhz5WHfKCOPwdnC4Lfx2K8LFfHYf1e24wCTi-AkAAUBJgvgIYhsau8QFQAlgCoAGGxq7xAaAB9pur0gM"
+        },
+        "bracers": {
+            "id": "Bracers_205",
+            "name": "Sling Denial",
+            "icon": "bracers_205_demonhunter_male",
+            "displayColor": "yellow",
+            "tooltipParams": "item/CkEIy9nhlAYSBwgEFdgsyssdaA4XdR3FnqiRHaCBE64dvQrwTB2yV9XuIgsIARW1RAMAGAIgCDAJOL8DQABQDGC_AxjPzK7DBlACWAI"
+        },
+        "mainHand": {
+            "id": "Axe_1H_207",
+            "name": "Mangle Break",
+            "icon": "axe_1h_207_demonhunter_male",
+            "displayColor": "yellow",
+            "tooltipParams": "item/CmwIyurACRIHCAQVriwHYx1TiUngHaBssxQd576acR3k5anwHe06wjYdzkX0aSILCAEVbUIDABgcICYwCTjmBEAAUBBg5gRqJQoMCAAQ0ZOAooGAgKASEhUIg73wrQUSBwgEFRuWrpgwDTgAQAEY3LK5sAxQAlgC"
+        },
+        "offHand": {
+            "id": "Unique_Shield_009_104",
+            "name": "Stormshield",
+            "icon": "unique_shield_009_104_demonhunter_male",
+            "displayColor": "orange",
+            "tooltipParams": "item/CjkI_M72qwQSBwgEFZu1pD0dDQHWyB1OT9lkHcQayXsd1maKlB2gbLMUHVtOgMkwCTiIA0AAUBJgiAMYttal2gdQAlgC"
+        },
+        "waist": {
+            "id": "BarbBelt_203",
+            "name": "Grisly Sash",
+            "icon": "barbbelt_203_demonhunter_male",
+            "displayColor": "yellow",
+            "tooltipParams": "item/CjwI4IOLyAQSBwgEFZL35H0dql7udR0eF1qjHQ4XgMkdnmyzFCILCAAVtP4BABgeIBYwCTjIA0AAUAxgyAMYpN6n3g9QAlgC"
+        },
+        "rightFinger": {
+            "id": "Unique_Ring_020",
+            "name": "Bul-Kathos's Wedding Band",
+            "icon": "unique_ring_020_barbarian_female",
+            "displayColor": "orange",
+            "tooltipParams": "item/CmAIwaPWmA8SBwgEFXcFZdQdQaZG4h2GAmPqHdbxGnIdL2MibB3FnqiRHZo3IPIwCTihA0AAUBJgoQNqJQoMCAAQ7Lz74YCAgOASEhUIiIX1zw4SBwgEFWL1i18wDTgAQAEYkerXuQVQAlgC"
+        },
+        "leftFinger": {
+            "id": "Ring_21",
+            "name": "The Defiance",
+            "icon": "ring_21_demonhunter_male",
+            "displayColor": "yellow",
+            "tooltipParams": "item/CjwI4M_M2AsSBwgEFTJVXUQdusC15h0_Rx4MHQWJuxUdOkSumyILCAEVhUIDABgAICowCTiIA0AAUAxgiAMY5NTqxQhQAlgC"
+        },
+        "neck": {
+            "id": "Unique_Amulet_005_104",
+            "name": "Ouroboros",
+            "icon": "unique_amulet_005_104_demonhunter_male",
+            "displayColor": "orange",
+            "tooltipParams": "item/CjkI2azgiQcSBwgEFUbjIbwdnGyzFB1W6r0LHYjEFu8d-7H1Ph2Ypj1cHZUCba0wCTjxAkAAUBJg8QIY8_LwvQhQAlgC"
+        }
+    },
+    "followers": {
+        "templar": {
+            "slug": "templar",
+            "level": 60,
+            "items": {
+                "special": {
+                    "id": "Templar_Special_204",
+                    "name": "Signature Demolisher",
+                    "icon": "templar_special_204_demonhunter_male",
+                    "displayColor": "yellow",
+                    "tooltipParams": "item/CjgI_OK31QgSBwgEFeoLY0QdElbV7h2cbLMUHdqQjBQd9mpQXyILCAEVZ0IDABgCIAIwCTgAQABQDBjUr5jGCA"
+                },
+                "mainHand": {
+                    "id": "Spear_205",
+                    "name": "Footman's Sanctum",
+                    "icon": "spear_205_demonhunter_male",
+                    "displayColor": "yellow",
+                    "tooltipParams": "item/CkYIyd2g1AcSBwgEFZEf9vkdnmyzFB0vocM_Hbrx7Bodz8NHrB1MY08wHQF9_mUiCwgBFYpCAwAYJCASMAk42wNAAFAQYNsDGN2Bz2A"
+                },
+                "offHand": {
+                    "id": "Shield_206_104",
+                    "name": "Blockade Rebel",
+                    "icon": "shield_206_104_demonhunter_male",
+                    "displayColor": "yellow",
+                    "tooltipParams": "item/CkYI_arq8AcSBwgEFeSCN-wdD1z0_B2dbLMUHUAA4gYdtvHsGh2sLjBMHcWsHqYiCwgBFW9CAwAYFCAEMAk4nwVAAFAQYJ8FGLf0w7wC"
+                },
+                "rightFinger": {
+                    "id": "Ring_23",
+                    "name": "Antique Ire",
+                    "icon": "ring_23_demonhunter_male",
+                    "displayColor": "yellow",
+                    "tooltipParams": "item/CkEIwonulwESBwgEFTRVXUQdrcflcR0eF1qjHedr1bcdElbV7h2V-O2WIgsIARXCRAMAGCAgEDAJOOIDQABQDmDiAxjo1OrFCA"
+                },
+                "leftFinger": {
+                    "id": "Ring_22",
+                    "name": "Cycle Rest",
+                    "icon": "ring_22_demonhunter_male",
+                    "displayColor": "yellow",
+                    "tooltipParams": "item/CjwIpa7c-QsSBwgEFTNVXUQdhOlLDB1fzLYoHWOkQA0dyNLzZSILCAEVeEIDABgGIAIwCTjBA0AAUAxgwQMY5tTqxQg"
+                },
+                "neck": {
+                    "id": "Amulet12",
+                    "name": "Victory Sin",
+                    "icon": "amulet12_demonhunter_male",
+                    "displayColor": "yellow",
+                    "tooltipParams": "item/CjwI6ur8kA0SBwgEFavFRGQdt_HsGh2_UqRHHb-IPlYdnWyzFCILCAEVdUIDABgIIBAwCTi6A0AAUAxgkgQY1pamxAw"
+                }
+            },
+            "stats": {
+                "goldFind": 3,
+                "magicFind": 3,
+                "experienceBonus": 0
+            },
+            "skills": [
+                {
+                    "skill": {
+                        "slug": "heal",
+                        "name": "Heal",
+                        "icon": "templar_heal",
+                        "level": 5,
+                        "tooltipUrl": "skill/templar/heal",
+                        "description": "Heals you or the Templar for 4651 Life.\r\n\r\nCooldown: 30 seconds",
+                        "simpleDescription": "Heals you or the Templar.",
+                        "skillCalcId": "a"
+                    }
+                },
+                {
+                    "skill": {
+                        "slug": "intimidate",
+                        "name": "Intimidate",
+                        "icon": "templar_intimidate",
+                        "level": 10,
+                        "tooltipUrl": "skill/templar/intimidate",
+                        "description": "Enemy units are slowed by 60% for 3 seconds when they hit the Templar.",
+                        "simpleDescription": "Enemies attacking the Templar are slowed.",
+                        "skillCalcId": "Y"
+                    }
+                },
+                {
+                    "skill": {
+                        "slug": "charge",
+                        "name": "Charge",
+                        "icon": "templar_shieldcharge",
+                        "level": 15,
+                        "tooltipUrl": "skill/templar/charge",
+                        "description": "Charges a target, dealing 50% weapon damage and stunning all enemies within 8 yards for 2 seconds.\r\n\r\nCooldown: 30 seconds",
+                        "simpleDescription": "Charges an enemy, dealing damage and stunning the target.",
+                        "skillCalcId": "c"
+                    }
+                },
+                {
+                    "skill": {
+                        "slug": "inspire",
+                        "name": "Inspire",
+                        "icon": "templar_inspire",
+                        "level": 20,
+                        "tooltipUrl": "skill/templar/inspire",
+                        "description": "Increase resource generation for all allies that the Templar is following.\r\nMana: 2 per second.\r\nArcane Power: 0.5 per second.\r\nHatred: 1 per second.\r\nFury: 8% generated.\r\nSpirit: 12% generated.",
+                        "simpleDescription": "Increases your resource regeneration.",
+                        "skillCalcId": "d"
+                    }
+                }
+            ]
+        },
+        "scoundrel": {
+            "slug": "scoundrel",
+            "level": 60,
+            "items": {
+                "special": {
+                    "id": "Scoundrel_Special_203",
+                    "name": "Luring Legacy",
+                    "icon": "scoundrel_special_203_demonhunter_male",
+                    "displayColor": "yellow",
+                    "tooltipParams": "item/Cj0Iy-P42wcSBwgEFaMBTPIdnGyzFB2UGpbjHQ4XgMkd4uWp8B2dKQ6IIgsIABXE_gEAGAYgJDAJOABAAFAOGLn5n9sB"
+                },
+                "mainHand": {
+                    "id": "Crossbow_207",
+                    "name": "Feral Shrike",
+                    "icon": "crossbow_207_demonhunter_male",
+                    "displayColor": "yellow",
+                    "tooltipParams": "item/CjwI8su8ng8SBwgEFQpcygodvubdtR0x0uc_HV5pfFUdZ1kXtSILCAAVqv4BABgGIAgwCTjIBEAAUAxgyAQYlPDSrAE"
+                },
+                "rightFinger": {
+                    "id": "Ring_21",
+                    "name": "Worthy Ring",
+                    "icon": "ring_21_demonhunter_male",
+                    "displayColor": "blue",
+                    "tooltipParams": "item/CiUIlqfw-gcSBwgEFTJVXUQdOkSumx1Vpc87MAk4lgNAAFAIYJYDGOTU6sUI"
+                },
+                "leftFinger": {
+                    "id": "Ring_23",
+                    "name": "Assailing Ring",
+                    "icon": "ring_23_demonhunter_male",
+                    "displayColor": "blue",
+                    "tooltipParams": "item/CiUI0pDlhwoSBwgEFTRVXUQdvB894h11sezwMAk48gJAAFAIYPICGOjU6sUI"
+                },
+                "neck": {
+                    "id": "Amulet14",
+                    "name": "Coursing Choker",
+                    "icon": "amulet14_demonhunter_male",
+                    "displayColor": "yellow",
+                    "tooltipParams": "item/CjwIlfvohAkSBwgEFa3FRGQdnGyzFB2bNtSZHVeorosd0IQCWCILCAAVyP4BABgUIBgwCTj5A0AAUAxg-QMY2pamxAw"
+                }
+            },
+            "stats": {
+                "goldFind": 0,
+                "magicFind": 0,
+                "experienceBonus": 0
+            },
+            "skills": [
+                {
+                    "skill": {
+                        "slug": "poison-bolts",
+                        "name": "Poison Bolts",
+                        "icon": "scoundrel_poisonarrow",
+                        "level": 5,
+                        "tooltipUrl": "skill/scoundrel/poison-bolts",
+                        "description": "Ranged attack which deals 40% weapon damage and an additional 40% weapon damage as Poison over 3 seconds.\r\n\r\nCooldown: 6 seconds",
+                        "simpleDescription": "Shoots a deadly poisoned bolt.",
+                        "skillCalcId": "Z"
+                    }
+                },
+                {
+                    "skill": {
+                        "slug": "vanish",
+                        "name": "Vanish",
+                        "icon": "scoundrel_vanish",
+                        "level": 10,
+                        "tooltipUrl": "skill/scoundrel/vanish",
+                        "description": "The Scoundrel vanishes in a cloud of smoke when injured, reappearing after 5 seconds. While vanished, he will heal himself for 15505 Life.\r\n\r\nCooldown: 30 seconds",
+                        "simpleDescription": "The Scoundrel temporarily vanishes when in danger.",
+                        "skillCalcId": "Y"
+                    }
+                },
+                {
+                    "skill": {
+                        "slug": "multishot",
+                        "name": "Multishot",
+                        "icon": "scoundrel_multishot",
+                        "level": 15,
+                        "tooltipUrl": "skill/scoundrel/multishot",
+                        "description": "The Scoundrel's ranged attacks fire 3 bolts at a time.",
+                        "simpleDescription": "The Scoundrel's attacks shoot multiple bolts.",
+                        "skillCalcId": "X"
+                    }
+                },
+                {
+                    "skill": {
+                        "slug": "anatomy",
+                        "name": "Anatomy",
+                        "icon": "scoundrel_anatomy",
+                        "level": 20,
+                        "tooltipUrl": "skill/scoundrel/anatomy",
+                        "description": "Increases Critical Hit Chance by 3% for the Scoundrel and his allies.",
+                        "simpleDescription": "Increases the Critical Hit Chance of the Scoundrel and his allies.",
+                        "skillCalcId": "W"
+                    }
+                }
+            ]
+        },
+        "enchantress": {
+            "slug": "enchantress",
+            "level": 60,
+            "items": {
+                "special": {
+                    "id": "Enchantress_Special_204",
+                    "name": "Praise Demise",
+                    "icon": "enchantress_special_204_demonhunter_male",
+                    "displayColor": "yellow",
+                    "tooltipParams": "item/Cj0Igsv5nAwSBwgEFTOjYi0d5aoeph0D7L0LHW6GAlgdZFCqBx3l5anwIgsIARVsQgMAGBogHjAJOABAAFAOGOaMldYF"
+                },
+                "mainHand": {
+                    "id": "Sword_2H_206",
+                    "name": "Arena Strike",
+                    "icon": "sword_2h_206_demonhunter_male",
+                    "displayColor": "yellow",
+                    "tooltipParams": "item/CjwI-Ib_4QoSBwgEFf_9LvIdgVAeSh31vCi6HQUMklId576acSILCAEVxGUDABgCIEAwCTiCBEAAUAxgggQYgYiI3QE"
+                },
+                "rightFinger": {
+                    "id": "Ring_19",
+                    "name": "Doom Remnant",
+                    "icon": "ring_19_demonhunter_male",
+                    "displayColor": "yellow",
+                    "tooltipParams": "item/CmMIz5DCtgMSBwgEFRlVXUQdBVbV7h3lrAcnHZS_NIodVmlQXyILCAEVtUQDABgMIBowCTijA0AAUAxgowNqJQoMCAAQmIvgkoGAgMAiEhUI8fn11wwSBwgEFfae2KswCTgAQAEYstTqxQg"
+                },
+                "leftFinger": {
+                    "id": "Ring_23",
+                    "name": "Sigil Seal",
+                    "icon": "ring_23_demonhunter_male",
+                    "displayColor": "yellow",
+                    "tooltipParams": "item/CkEIxqDKvQESBwgEFTRVXUQdOW8ixR3OIRrqHbjRTcUdrcflcR21BunyIgsIABWm_gEAGBQgADAJOP4CQABQDmD-Ahjo1OrFCA"
+                },
+                "neck": {
+                    "id": "Amulet13",
+                    "name": "Ancient Essence",
+                    "icon": "amulet13_demonhunter_male",
+                    "displayColor": "yellow",
+                    "tooltipParams": "item/CjwInIPwjQQSBwgEFazFRGQddqWvER2GxBbvHRBc9Pwd1djEGSILCAEVyEQDABgaIBYwCTjcA0AAUAxg3AMY2JamxAw"
+                }
+            },
+            "stats": {
+                "goldFind": 3,
+                "magicFind": 0,
+                "experienceBonus": 0
+            },
+            "skills": [
+                {
+                    "skill": {
+                        "slug": "forceful-push",
+                        "name": "Forceful Push",
+                        "icon": "enchantress_forcefulpush",
+                        "level": 15,
+                        "tooltipUrl": "skill/enchantress/forceful-push",
+                        "description": "Summon an Arcane explosion 8 yards around an enemy, dealing 100% weapon damage as Arcane and knocking back all monsters caught within it.\r\n\r\nCooldown: 10 seconds",
+                        "simpleDescription": "Creates an explosion that deals massive damage and knocks back enemies.",
+                        "skillCalcId": "Z"
+                    }
+                },
+                {
+                    "skill": {
+                        "slug": "powered-armor",
+                        "name": "Powered Armor",
+                        "icon": "enchantress_poweredarmor",
+                        "level": 20,
+                        "tooltipUrl": "skill/enchantress/powered-armor",
+                        "description": "Enchantress buffs herself and her allies, increasing Armor by 15%. Attackers are slowed by 30% for 3 seconds.",
+                        "simpleDescription": "Increases the armor of the Enchantress and her allies, and slows attacking enemies.",
+                        "skillCalcId": "Y"
+                    }
+                },
+                {
+                    "skill": {
+                        "slug": "erosion",
+                        "name": "Erosion",
+                        "icon": "enchantress_scorchedearth",
+                        "level": 25,
+                        "tooltipUrl": "skill/enchantress/erosion",
+                        "description": "Conjures a pool of energy that deals 50% weapon damage as Arcane  per second. Affected enemies take an extra 15% damage from all attacks for 3 seconds.\r\n\r\nCooldown: 15 seconds",
+                        "simpleDescription": "Blasts a target area, causing enemies to take damage over time.",
+                        "skillCalcId": "X"
+                    }
+                },
+                {
+                    "skill": {
+                        "slug": "focused-mind",
+                        "name": "Focused Mind",
+                        "icon": "enchantress_focusedmind",
+                        "level": 30,
+                        "tooltipUrl": "skill/enchantress/focused-mind",
+                        "description": "An aura that increases attack speed by 3% for allies within 40 yards.",
+                        "simpleDescription": "Increases the attack speed of the Enchantress and her allies.",
+                        "skillCalcId": "d"
+                    }
+                }
+            ]
+        }
+    },
+    "stats": {
+        "life": 43762,
+        "damage": 42201.7,
+        "attackSpeed": 1.2999999523162842,
+        "armor": 5742,
+        "strength": 1813,
+        "dexterity": 556,
+        "vitality": 1070,
+        "intelligence": 541,
+        "physicalResist": 574,
+        "fireResist": 546,
+        "coldResist": 413,
+        "lightningResist": 413,
+        "poisonResist": 413,
+        "arcaneResist": 430,
+        "critDamage": 3.2,
+        "damageIncrease": 18.1299991607666,
+        "critChance": 0.39500001072883606,
+        "damageReduction": 0.6568289995193481,
+        "blockChance": 0.36000000000000004,
+        "thorns": 1696,
+        "lifeSteal": 0.029,
+        "lifePerKill": 0,
+        "goldFind": 0.6,
+        "magicFind": 0.79,
+        "blockAmountMin": 3706,
+        "blockAmountMax": 4706,
+        "lifeOnHit": 1041,
+        "primaryResource": 100,
+        "secondaryResource": 0
+    },
+    "kills": {
+        "elites": 3775
+    },
+    "progress": {
+        "normal": {
+            "act1": {
+                "completed": true,
+                "completedQuests": [
+                    {
+                        "slug": "the-fallen-star",
+                        "name": "The Fallen Star"
+                    },
+                    {
+                        "slug": "the-legacy-of-cain",
+                        "name": "The Legacy of Cain"
+                    },
+                    {
+                        "slug": "a-shattered-crown",
+                        "name": "A Shattered Crown"
+                    },
+                    {
+                        "slug": "reign-of-the-black-king",
+                        "name": "Reign of the Black King"
+                    },
+                    {
+                        "slug": "sword-of-the-stranger",
+                        "name": "Sword of the Stranger"
+                    },
+                    {
+                        "slug": "the-broken-blade",
+                        "name": "The Broken Blade"
+                    },
+                    {
+                        "slug": "the-doom-in-wortham",
+                        "name": "The Doom in Wortham"
+                    },
+                    {
+                        "slug": "trailing-the-coven",
+                        "name": "Trailing the Coven"
+                    },
+                    {
+                        "slug": "the-imprisoned-angel",
+                        "name": "The Imprisoned Angel"
+                    },
+                    {
+                        "slug": "return-to-new-tristram",
+                        "name": "Return to New Tristram"
+                    }
+                ]
+            },
+            "act2": {
+                "completed": true,
+                "completedQuests": [
+                    {
+                        "slug": "shadows-in-the-desert",
+                        "name": "Shadows in the Desert"
+                    },
+                    {
+                        "slug": "the-road-to-alcarnus",
+                        "name": "The Road to Alcarnus"
+                    },
+                    {
+                        "slug": "city-of-blood",
+                        "name": "City of Blood"
+                    },
+                    {
+                        "slug": "a-royal-audience",
+                        "name": "A Royal Audience"
+                    },
+                    {
+                        "slug": "unexpected-allies",
+                        "name": "Unexpected Allies"
+                    },
+                    {
+                        "slug": "betrayer-of-the-horadrim",
+                        "name": "Betrayer of the Horadrim"
+                    },
+                    {
+                        "slug": "blood-and-sand",
+                        "name": "Blood and Sand"
+                    },
+                    {
+                        "slug": "the-black-soulstone",
+                        "name": "The Black Soulstone"
+                    },
+                    {
+                        "slug": "the-scouring-of-caldeum",
+                        "name": "The Scouring of Caldeum"
+                    },
+                    {
+                        "slug": "lord-of-lies",
+                        "name": "Lord of Lies"
+                    }
+                ]
+            },
+            "act3": {
+                "completed": true,
+                "completedQuests": [
+                    {
+                        "slug": "the-siege-of-bastions-keep",
+                        "name": "The Siege of Bastion's Keep"
+                    },
+                    {
+                        "slug": "heart-of-sin",
+                        "name": "Heart of Sin"
+                    }
+                ]
+            },
+            "act4": {
+                "completed": true,
+                "completedQuests": [
+                    {
+                        "slug": "fall-of-the-high-heavens",
+                        "name": "Fall of the High Heavens"
+                    },
+                    {
+                        "slug": "the-light-of-hope",
+                        "name": "The Light of Hope"
+                    },
+                    {
+                        "slug": "beneath-the-spire",
+                        "name": "Beneath the Spire"
+                    },
+                    {
+                        "slug": "prime-evil",
+                        "name": "Prime Evil"
+                    }
+                ]
+            }
+        },
+        "nightmare": {
+            "act1": {
+                "completed": false,
+                "completedQuests": [
+                    {
+                        "slug": "the-fallen-star",
+                        "name": "The Fallen Star"
+                    },
+                    {
+                        "slug": "the-legacy-of-cain",
+                        "name": "The Legacy of Cain"
+                    },
+                    {
+                        "slug": "a-shattered-crown",
+                        "name": "A Shattered Crown"
+                    },
+                    {
+                        "slug": "reign-of-the-black-king",
+                        "name": "Reign of the Black King"
+                    },
+                    {
+                        "slug": "the-imprisoned-angel",
+                        "name": "The Imprisoned Angel"
+                    }
+                ]
+            },
+            "act2": {
+                "completed": true,
+                "completedQuests": [
+                    {
+                        "slug": "shadows-in-the-desert",
+                        "name": "Shadows in the Desert"
+                    },
+                    {
+                        "slug": "city-of-blood",
+                        "name": "City of Blood"
+                    },
+                    {
+                        "slug": "a-royal-audience",
+                        "name": "A Royal Audience"
+                    },
+                    {
+                        "slug": "unexpected-allies",
+                        "name": "Unexpected Allies"
+                    },
+                    {
+                        "slug": "betrayer-of-the-horadrim",
+                        "name": "Betrayer of the Horadrim"
+                    },
+                    {
+                        "slug": "blood-and-sand",
+                        "name": "Blood and Sand"
+                    },
+                    {
+                        "slug": "the-black-soulstone",
+                        "name": "The Black Soulstone"
+                    },
+                    {
+                        "slug": "the-scouring-of-caldeum",
+                        "name": "The Scouring of Caldeum"
+                    },
+                    {
+                        "slug": "lord-of-lies",
+                        "name": "Lord of Lies"
+                    }
+                ]
+            },
+            "act3": {
+                "completed": true,
+                "completedQuests": [
+                    {
+                        "slug": "the-siege-of-bastions-keep",
+                        "name": "The Siege of Bastion's Keep"
+                    },
+                    {
+                        "slug": "turning-the-tide",
+                        "name": "Turning the Tide"
+                    },
+                    {
+                        "slug": "the-breached-keep",
+                        "name": "The Breached Keep"
+                    },
+                    {
+                        "slug": "tremors-in-the-stone",
+                        "name": "Tremors in the Stone"
+                    },
+                    {
+                        "slug": "machines-of-war",
+                        "name": "Machines of War"
+                    },
+                    {
+                        "slug": "siegebreaker",
+                        "name": "Siegebreaker"
+                    },
+                    {
+                        "slug": "heart-of-sin",
+                        "name": "Heart of Sin"
+                    }
+                ]
+            },
+            "act4": {
+                "completed": true,
+                "completedQuests": [
+                    {
+                        "slug": "fall-of-the-high-heavens",
+                        "name": "Fall of the High Heavens"
+                    },
+                    {
+                        "slug": "the-light-of-hope",
+                        "name": "The Light of Hope"
+                    },
+                    {
+                        "slug": "beneath-the-spire",
+                        "name": "Beneath the Spire"
+                    },
+                    {
+                        "slug": "prime-evil",
+                        "name": "Prime Evil"
+                    }
+                ]
+            }
+        },
+        "hell": {
+            "act1": {
+                "completed": true,
+                "completedQuests": [
+                    {
+                        "slug": "the-fallen-star",
+                        "name": "The Fallen Star"
+                    },
+                    {
+                        "slug": "the-legacy-of-cain",
+                        "name": "The Legacy of Cain"
+                    },
+                    {
+                        "slug": "a-shattered-crown",
+                        "name": "A Shattered Crown"
+                    },
+                    {
+                        "slug": "reign-of-the-black-king",
+                        "name": "Reign of the Black King"
+                    },
+                    {
+                        "slug": "sword-of-the-stranger",
+                        "name": "Sword of the Stranger"
+                    },
+                    {
+                        "slug": "the-broken-blade",
+                        "name": "The Broken Blade"
+                    },
+                    {
+                        "slug": "the-doom-in-wortham",
+                        "name": "The Doom in Wortham"
+                    },
+                    {
+                        "slug": "trailing-the-coven",
+                        "name": "Trailing the Coven"
+                    },
+                    {
+                        "slug": "the-imprisoned-angel",
+                        "name": "The Imprisoned Angel"
+                    },
+                    {
+                        "slug": "return-to-new-tristram",
+                        "name": "Return to New Tristram"
+                    }
+                ]
+            },
+            "act2": {
+                "completed": false,
+                "completedQuests": [
+                    {
+                        "slug": "shadows-in-the-desert",
+                        "name": "Shadows in the Desert"
+                    },
+                    {
+                        "slug": "the-road-to-alcarnus",
+                        "name": "The Road to Alcarnus"
+                    },
+                    {
+                        "slug": "city-of-blood",
+                        "name": "City of Blood"
+                    },
+                    {
+                        "slug": "a-royal-audience",
+                        "name": "A Royal Audience"
+                    }
+                ]
+            },
+            "act3": {
+                "completed": true,
+                "completedQuests": [
+                    {
+                        "slug": "the-siege-of-bastions-keep",
+                        "name": "The Siege of Bastion's Keep"
+                    },
+                    {
+                        "slug": "heart-of-sin",
+                        "name": "Heart of Sin"
+                    }
+                ]
+            },
+            "act4": {
+                "completed": true,
+                "completedQuests": [
+                    {
+                        "slug": "fall-of-the-high-heavens",
+                        "name": "Fall of the High Heavens"
+                    },
+                    {
+                        "slug": "prime-evil",
+                        "name": "Prime Evil"
+                    }
+                ]
+            }
+        },
+        "inferno": {
+            "act1": {
+                "completed": true,
+                "completedQuests": [
+                    {
+                        "slug": "the-fallen-star",
+                        "name": "The Fallen Star"
+                    },
+                    {
+                        "slug": "the-legacy-of-cain",
+                        "name": "The Legacy of Cain"
+                    },
+                    {
+                        "slug": "the-broken-blade",
+                        "name": "The Broken Blade"
+                    },
+                    {
+                        "slug": "the-doom-in-wortham",
+                        "name": "The Doom in Wortham"
+                    },
+                    {
+                        "slug": "the-imprisoned-angel",
+                        "name": "The Imprisoned Angel"
+                    },
+                    {
+                        "slug": "return-to-new-tristram",
+                        "name": "Return to New Tristram"
+                    }
+                ]
+            },
+            "act2": {
+                "completed": true,
+                "completedQuests": [
+                    {
+                        "slug": "shadows-in-the-desert",
+                        "name": "Shadows in the Desert"
+                    },
+                    {
+                        "slug": "the-road-to-alcarnus",
+                        "name": "The Road to Alcarnus"
+                    },
+                    {
+                        "slug": "blood-and-sand",
+                        "name": "Blood and Sand"
+                    },
+                    {
+                        "slug": "the-black-soulstone",
+                        "name": "The Black Soulstone"
+                    },
+                    {
+                        "slug": "the-scouring-of-caldeum",
+                        "name": "The Scouring of Caldeum"
+                    },
+                    {
+                        "slug": "lord-of-lies",
+                        "name": "Lord of Lies"
+                    }
+                ]
+            },
+            "act3": {
+                "completed": true,
+                "completedQuests": [
+                    {
+                        "slug": "the-siege-of-bastions-keep",
+                        "name": "The Siege of Bastion's Keep"
+                    },
+                    {
+                        "slug": "turning-the-tide",
+                        "name": "Turning the Tide"
+                    },
+                    {
+                        "slug": "the-breached-keep",
+                        "name": "The Breached Keep"
+                    },
+                    {
+                        "slug": "tremors-in-the-stone",
+                        "name": "Tremors in the Stone"
+                    },
+                    {
+                        "slug": "machines-of-war",
+                        "name": "Machines of War"
+                    },
+                    {
+                        "slug": "siegebreaker",
+                        "name": "Siegebreaker"
+                    },
+                    {
+                        "slug": "heart-of-sin",
+                        "name": "Heart of Sin"
+                    }
+                ]
+            },
+            "act4": {
+                "completed": true,
+                "completedQuests": [
+                    {
+                        "slug": "fall-of-the-high-heavens",
+                        "name": "Fall of the High Heavens"
+                    },
+                    {
+                        "slug": "the-light-of-hope",
+                        "name": "The Light of Hope"
+                    },
+                    {
+                        "slug": "beneath-the-spire",
+                        "name": "Beneath the Spire"
+                    },
+                    {
+                        "slug": "prime-evil",
+                        "name": "Prime Evil"
+                    }
+                ]
+            }
+        }
+    },
+    "dead": false,
+    "last-updated": 1348916417
+}
